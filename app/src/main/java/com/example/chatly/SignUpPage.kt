@@ -1,5 +1,6 @@
 package com.example.chatly
 
+import android.widget.Toast
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,6 +10,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -23,6 +25,7 @@ fun SignUpPage(navigator : NavigationHelper) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var confirmPassword by remember { mutableStateOf("") }
+    var context = LocalContext.current
 
     Column(
         Modifier.staticColumn().verticalScroll(rememberScrollState()),
@@ -74,7 +77,31 @@ fun SignUpPage(navigator : NavigationHelper) {
         )
         SpacerColumn()
 
-        AppButton("Create Account" , onClick = { /* Handle Click */ },)
+        AppButton("Create Account" , onClick = {
+            when {
+                fullName.isEmpty() && email.isEmpty() && password.isEmpty() && confirmPassword.isEmpty() ->
+                    Toast.makeText(context, "All fields are empty, please fill them", Toast.LENGTH_LONG).show()
+
+                fullName.isEmpty() ->
+                    Toast.makeText(context, "Enter your full name", Toast.LENGTH_LONG).show()
+
+                email.isEmpty() ->
+                    Toast.makeText(context, "Enter email", Toast.LENGTH_LONG).show()
+
+                password.isEmpty() ->
+                    Toast.makeText(context, "Enter your password", Toast.LENGTH_LONG).show()
+
+                confirmPassword.isEmpty() ->
+                    Toast.makeText(context, "Confirm your password", Toast.LENGTH_LONG).show()
+
+                password != confirmPassword ->
+                    Toast.makeText(context, "Passwords do not match", Toast.LENGTH_LONG).show()
+
+                else ->
+                    Toast.makeText(context, "Registration successful", Toast.LENGTH_LONG).show()
+            }
+
+        },)
 
         SpacerColumn()
 

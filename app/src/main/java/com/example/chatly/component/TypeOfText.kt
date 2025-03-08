@@ -8,10 +8,10 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun PrimaryText(text: String , color : Color , modifier: Modifier = Modifier) {
-    Text("$text" , fontSize = 22.sp , color = color)
+    Text("$text" , fontSize = 22.sp , color = color, modifier = modifier)
 }
 
 @Composable
 fun SecondText(text: String, color : Color , modifier: Modifier = Modifier) {
-    Text("$text" , fontSize = 16.sp , color = color)
+    Text("$text" , fontSize = 16.sp , color = color , modifier = modifier)
 }
