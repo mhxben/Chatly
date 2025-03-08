@@ -80,7 +80,7 @@ fun SignUpPage(navigator : NavigationHelper) {
 
         Row {
             SecondText("Have an account ?" , colorResource(id = R.color.black))
-            SecondText(" Sign In" , colorResource(id = R.color.primary) , modifier = Modifier.clickable { navigator.navigateToSignUp() })
+            SecondText(" Sign In" , colorResource(id = R.color.primary) , modifier = Modifier.clickable { navigator.navigateToLogin() })
         }
     }
 }

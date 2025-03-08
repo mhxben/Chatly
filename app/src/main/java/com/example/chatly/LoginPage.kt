@@ -9,7 +9,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.chatly.component.*
 import com.example.chatly.ui.theme.SpacerColumn
 import com.example.chatly.ui.theme.staticColumn
