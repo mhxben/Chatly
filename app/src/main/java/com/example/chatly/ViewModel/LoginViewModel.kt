@@ -1,20 +1,19 @@
 package com.example.chatly.ViewModel
 
+import com.example.chatly.Model.LoginUser
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
 class LoginViewModel : ViewModel() {
-    var email by mutableStateOf("")
-    var password by mutableStateOf("")
+    var loginUser by mutableStateOf(LoginUser("",""))
 
     fun loginValidation () : String? {
         return when {
-            email.isBlank() && password.isBlank() -> "Please fill your fields"
-            email.isBlank() -> "Please fill your email"
-            password.isBlank() -> "Please fill your password"
+            loginUser.email.isBlank() && loginUser.password.isBlank() -> "Please fill your fields"
+            loginUser.email.isBlank() -> "Please fill your email"
+            loginUser.password.isBlank() -> "Please fill your password"
             else -> null
         }
     }

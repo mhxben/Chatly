@@ -41,8 +41,8 @@ fun SignUpPage(navigator : NavigationHelper , viewModel: SignUpViewModel = viewM
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Full Name",
-                value = viewModel.fullName,
-                onValueChange = { viewModel.fullName = it },
+                value = viewModel.user.fullName,
+                onValueChange = { viewModel.user = viewModel.user.copy(fullName = it) },
                 keyboardType = KeyboardType.Text
             )
         )
@@ -51,8 +51,8 @@ fun SignUpPage(navigator : NavigationHelper , viewModel: SignUpViewModel = viewM
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Email",
-                value = viewModel.email,
-                onValueChange = { viewModel.email = it },
+                value = viewModel.user.email,
+                onValueChange = { viewModel.user = viewModel.user.copy(email = it) },
                 keyboardType = KeyboardType.Email
             )
         )
@@ -61,8 +61,8 @@ fun SignUpPage(navigator : NavigationHelper , viewModel: SignUpViewModel = viewM
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Password",
-                value = viewModel.password,
-                onValueChange = { viewModel.password = it },
+                value = viewModel.user.password,
+                onValueChange = { viewModel.user = viewModel.user.copy(password = it) },
                 keyboardType = KeyboardType.Password
             )
         )

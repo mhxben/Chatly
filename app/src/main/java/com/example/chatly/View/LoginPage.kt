@@ -38,8 +38,8 @@ fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewMod
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Email",
-                value = viewModel.email,
-                onValueChange = { viewModel.email = it },
+                value = viewModel.loginUser.email,
+                onValueChange = { viewModel.loginUser.email = it },
                 keyboardType = KeyboardType.Email
             )
         )
@@ -47,8 +47,8 @@ fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewMod
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Password",
-                value = viewModel.password,
-                onValueChange = { viewModel.password = it },
+                value = viewModel.loginUser.password,
+                onValueChange = { viewModel.loginUser.password = it },
                 keyboardType = KeyboardType.Password
             )
         )
