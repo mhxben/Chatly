@@ -1,4 +1,5 @@
 package com.example.chatly.View
+
 import android.graphics.BitmapFactory
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
