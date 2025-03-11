@@ -1,4 +1,4 @@
-package com.example.chatly.component
+package com.example.chatly.View.component
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
