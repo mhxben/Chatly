@@ -1,10 +1,12 @@
 package com.example.chatly.View
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.dp
 import com.example.chatly.View.component.MainOutlinedTextField
 import com.example.chatly.View.component.PrimaryText
 import com.example.chatly.View.component.models.OutlinedTextFieldClass
@@ -16,7 +18,8 @@ import com.example.chatly.R
 fun HomeContent(modifier: Modifier = Modifier) {
     var searchText by remember { mutableStateOf("") }
 
-    Column(Modifier.staticColumn()){
+    Column(modifier = modifier.staticColumn()){
+
         MainOutlinedTextField(
             params = OutlinedTextFieldClass(
                 label = "Search...",
@@ -25,7 +28,9 @@ fun HomeContent(modifier: Modifier = Modifier) {
                 keyboardType = KeyboardType.Text
             )
         )
+
         SpacerColumn()
+
         PrimaryText("Chat" , colorResource(id = R.color.primary))
 
     }

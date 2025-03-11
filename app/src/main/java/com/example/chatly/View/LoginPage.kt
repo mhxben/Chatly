@@ -1,6 +1,5 @@
 package com.example.chatly.View
 
-import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -39,7 +38,7 @@ fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewMod
             params = OutlinedTextFieldClass(
                 label = "Email",
                 value = viewModel.loginUser.email,
-                onValueChange = { viewModel.loginUser.email = it },
+                onValueChange = { viewModel.loginUser = viewModel.loginUser.copy(email = it) },
                 keyboardType = KeyboardType.Email
             )
         )
@@ -48,7 +47,7 @@ fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewMod
             params = OutlinedTextFieldClass(
                 label = "Password",
                 value = viewModel.loginUser.password,
-                onValueChange = { viewModel.loginUser.password = it },
+                onValueChange = { viewModel.loginUser = viewModel.loginUser.copy(password = it) },
                 keyboardType = KeyboardType.Password
             )
         )
