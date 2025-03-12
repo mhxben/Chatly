@@ -1,4 +1,4 @@
-package com.example.chatly.ui.theme.View
+package com.example.chatly.ui.view
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -13,11 +13,11 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.chatly.R
-import com.example.chatly.View.component.*
 import com.example.chatly.ui.theme.SpacerColumn
 import com.example.chatly.ui.theme.staticColumn
 import com.example.chatly.ui.theme.View.component.models.OutlinedTextFieldClass
 import com.example.chatly.ViewModel.LoginViewModel
+import com.example.chatly.ui.theme.View.NavigationHelper
 import com.example.chatly.ui.theme.View.component.*
 
 @Composable

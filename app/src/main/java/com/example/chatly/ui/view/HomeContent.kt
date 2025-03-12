@@ -1,4 +1,4 @@
-package com.example.chatly.ui.theme.View
+package com.example.chatly.ui.view
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.*

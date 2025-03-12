@@ -5,7 +5,9 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.chatly.view.HomePage
+import com.example.chatly.ui.view.LoginPage
+import com.example.chatly.ui.view.SignUpPage
+import com.example.chatly.view.*
 
 @Composable
 fun AppNavigation() {

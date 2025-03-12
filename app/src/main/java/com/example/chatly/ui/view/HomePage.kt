@@ -10,7 +10,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.chatly.R
-import com.example.chatly.ui.theme.View.HomeContent
+import com.example.chatly.ui.view.HomeContent
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
