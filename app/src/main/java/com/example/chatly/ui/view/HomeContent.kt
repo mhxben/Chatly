@@ -1,13 +1,13 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
-import com.example.chatly.View.component.MainOutlinedTextField
-import com.example.chatly.View.component.PrimaryText
-import com.example.chatly.View.component.models.OutlinedTextFieldClass
+import com.example.chatly.ui.theme.View.component.MainOutlinedTextField
+import com.example.chatly.ui.theme.View.component.PrimaryText
+import com.example.chatly.ui.theme.View.component.models.OutlinedTextFieldClass
 import com.example.chatly.ui.theme.SpacerColumn
 import com.example.chatly.ui.theme.staticColumn
 import com.example.chatly.R

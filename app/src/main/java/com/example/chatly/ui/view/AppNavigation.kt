@@ -1,4 +1,4 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController

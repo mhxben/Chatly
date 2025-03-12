@@ -1,4 +1,4 @@
-package com.example.chatly.View.component
+package com.example.chatly.ui.theme.View.component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -11,7 +11,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
-import com.example.chatly.View.component.models.OutlinedTextFieldClass
+import com.example.chatly.ui.theme.View.component.models.OutlinedTextFieldClass
 
 @Composable
 fun MainOutlinedTextField(params : OutlinedTextFieldClass) {

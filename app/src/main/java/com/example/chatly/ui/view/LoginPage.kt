@@ -1,4 +1,4 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -16,13 +16,14 @@ import com.example.chatly.R
 import com.example.chatly.View.component.*
 import com.example.chatly.ui.theme.SpacerColumn
 import com.example.chatly.ui.theme.staticColumn
-import com.example.chatly.View.component.models.OutlinedTextFieldClass
+import com.example.chatly.ui.theme.View.component.models.OutlinedTextFieldClass
 import com.example.chatly.ViewModel.LoginViewModel
+import com.example.chatly.ui.theme.View.component.*
 
 @Composable
-fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewModel()) {
+fun LoginPage(navigator: NavigationHelper, viewModel : LoginViewModel = viewModel()) {
 
-    var context = LocalContext.current
+    val context = LocalContext.current
 
     Column(Modifier.staticColumn(),
         horizontalAlignment = Alignment.CenterHorizontally ,
@@ -71,4 +72,3 @@ fun LoginPage(navigator: NavigationHelper , viewModel : LoginViewModel = viewMod
         }
     }
 }
-

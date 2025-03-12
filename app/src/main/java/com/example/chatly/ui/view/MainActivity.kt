@@ -1,4 +1,4 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

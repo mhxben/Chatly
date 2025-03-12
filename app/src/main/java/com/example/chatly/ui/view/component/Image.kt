@@ -1,4 +1,4 @@
-package com.example.chatly.View.component
+package com.example.chatly.ui.theme.View.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.size

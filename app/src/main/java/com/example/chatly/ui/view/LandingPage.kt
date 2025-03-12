@@ -1,4 +1,4 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import android.graphics.BitmapFactory
 import androidx.compose.animation.core.Animatable
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import com.example.chatly.R
-import com.example.chatly.View.component.AppImage
+import com.example.chatly.ui.theme.View.component.AppImage
 import kotlinx.coroutines.delay
 
 @Composable

@@ -1,4 +1,4 @@
-package com.example.chatly.View.component.models
+package com.example.chatly.ui.theme.View.component.models
 
 import androidx.compose.ui.text.input.KeyboardType
 

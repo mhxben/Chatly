@@ -1,4 +1,4 @@
-package com.example.chatly.View
+package com.example.chatly.ui.theme.View
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -16,16 +16,16 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.chatly.R
 import com.example.chatly.View.component.*
-import com.example.chatly.View.component.models.OutlinedTextFieldClass
+import com.example.chatly.ui.theme.View.component.models.OutlinedTextFieldClass
 import com.example.chatly.ViewModel.SignUpViewModel
 import com.example.chatly.ui.theme.SpacerColumn
+import com.example.chatly.ui.theme.View.component.*
 import com.example.chatly.ui.theme.staticColumn
-import com.example.chatly.View.AppNavigation
 
 @Composable
-fun SignUpPage(navigator : NavigationHelper , viewModel: SignUpViewModel = viewModel()) {
+fun SignUpPage(navigator : NavigationHelper, viewModel: SignUpViewModel = viewModel()) {
 
-    var context = LocalContext.current
+    val context = LocalContext.current
 
     Column(
         Modifier.staticColumn().verticalScroll(rememberScrollState()),
